@@ -9,6 +9,6 @@ portfolio, simply by changing the scrape url: kotaku, jezbel, io9, etc.
 
 deployed at : https://jalopnikscrape.herokuapp.com/
 
-![Image of Deployed App](https://www.github/ruebush/demo.png)
+![Image of Deployed App](https://github.com/ruebush/jalopnik-scrape/blob/master/demo.png)
 
 

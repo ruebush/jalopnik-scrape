@@ -1,0 +1,20 @@
+body, .nav-wrapper {
+  background: black;
+}
+
+.brand-logo {
+  font-family: perm
+}
+
+.card-title {
+  font-family: 'Permanent Marker', cursive;
+  color: red;
+}
+
+p {
+  font-family: 'Cinzel', serif;
+}
+
+.btn {
+  background: black;
+}

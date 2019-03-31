@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    {{!-- Materialize icons --}}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    {{!-- google fonts --}}
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Cinzel|Permanent+Marker" rel="stylesheet">
+
+    <title>jalopnik - auto news
+    </title>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <div class="container">
+                <a href="/" class="brand-logo">jalopnik - all the top news in the world of cars!</a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="waves-effect waves-light btn scrape">update list</a><i class="material-icons right">description</i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="articles-list">
+    </div>
+
+    </div>
+    
+  {{{body}}}
+
+  <!-- Modal Structure -->
+  <div id="comments-modal" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h4>comments</h4>
+      <div class="row comment-container"></div>
+    </div>
+    <div class="modal-footer">
+      <a href="/" class="modal-action modal-close waves-effect waves-green btn">hide</a>
+    </div>
+  </div>
+
+  <div id="submit-comment-modal" class="modal bottom-sheet">
+    <div id="hidden-info"></div>
+    <div class="modal-content">
+      <h4>leave a comment</h4>
+      <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="nickname" type="text" class="validate">
+          <label for="nickname">name</label>
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">comment</i>
+          <input id="comment" type="text" class="validate">
+          <label for="comment">comment</label>
+        </div>
+    </div>
+    <div class="modal-footer">
+      <a href="/" class="modal-action modal-close waves-effect waves-green btn submit submit-button">submit</a>
+    </div>
+  </div>
+    
+ 
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    
+    <!--  Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

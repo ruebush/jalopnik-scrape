@@ -1,0 +1,21 @@
+{{#each articles}}
+
+<div class="row">
+    <div class="col s12">
+      <div class="card darken-1">
+        <div class="card-content">
+          <a href="{{this.link}}" target="_blank">
+          <span class="card-title">{{this.title}}</span>
+          </a>
+          <p>{{this.summary}}</p>
+        </div>
+        <div class="card-action">
+          <a href="{{this.link}}" target="_blank"><button class="btn article-link">read article @ jalopnik</button></a>
+          <button class="btn waves-effect waves-light comment-view" data-id="{{this._id}}">view comments ({{this.comment.length}}) </a>
+          <button class="btn waves-effect waves-light comment-post modal-trigger" data-target="submit-comment-modal" data-id="{{this._id}}">leave a comment</a>
+        </div>
+      </div>
+    </div>
+</div>
+
+{{/each}}
